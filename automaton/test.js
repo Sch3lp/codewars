@@ -1,5 +1,5 @@
 let expect = require('chai').expect;
-let solution = require('./app');
+let solution = require('./solution');
 
 
 describe('Q1', () => {
