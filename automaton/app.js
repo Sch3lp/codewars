@@ -33,3 +33,4 @@ var myAutomaton = new Automaton();
 
 // Do anything necessary to set up your automaton's states, q1, q2, and q3.
 };
+
