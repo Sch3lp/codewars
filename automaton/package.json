@@ -13,6 +13,6 @@
   },
   "homepage": "https://github.com/Sch3lp/codewars#readme",
   "scripts": {
-    "test": "mocha"
+    "test": "karma start --singleRun"
   }
 }

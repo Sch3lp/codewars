@@ -1,5 +1,5 @@
 let assert = require('chai').assert;
-require('app');
+let solution = require('solution');
 
 
 describe('Q1', () => {
