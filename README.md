@@ -1,8 +1,8 @@
 #Why? What's this $%!?
-I wanted to use my own IDE to solve CodeWars Kata's.
+I wanted to use my own IDE to solve [CodeWars](http://www.codewars.com) Kata's.
 Admittedly, I know jack shit about VIM and/or EMACS.
 
-I didn't wanna bother installing the docker container etc. that CodeWars uses, because it seemed like a lot of overhead, and pretty far from a realistic project setup.
+I didn't wanna bother installing the [docker container etc.](https://github.com/Codewars/codewars-runner-cli) that CodeWars uses, because it seemed like a lot of overhead, and pretty far from a realistic project setup.
 
 To submit your kata solutions to CodeWars, you might have to strip some stuff in your solution, like `module.exports`. 
 
