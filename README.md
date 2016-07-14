@@ -1,3 +1,13 @@
+#Why? What's this $%!?
+I wanted to use my own IDE to solve CodeWars Kata's.
+Admittedly, I know jack shit about VIM and/or EMACS.
+
+I didn't wanna bother installing the docker container etc. that CodeWars uses, because it seemed like a lot of overhead, and pretty far from a realistic project setup.
+
+To submit your kata solutions to CodeWars, you might have to strip some stuff in your solution, like `module.exports`. 
+
+To submit your kata solution tests, either just forget about it, or use multiple cursor magic to rewrite into the CodeWars specific Test framework.
+
 #Usage
 ##Creating a new Kata
 ```
@@ -11,7 +21,7 @@ Modify package.json to look like this:
 ```
 {
   "scripts": {
-    "test": "karma start --singleRun"
+    "test": "mocha"
   }
 }
 ```
@@ -26,13 +36,3 @@ codewars/parent >$  npm update
 codewars/parent >$  cd ../new_kata
 codewars/new_kata >$  npm rebuild
 ```
-
-#Notes
-I wanted to use my own IDE to solve CodeWars Kata's.
-Admittedly, I know jack shit about VIM and/or EMACS.
-
-I didn't wanna bother installing the docker container etc. that CodeWars uses, because it seemed like a lot of overhead, and pretty far from a realistic project setup.
-
-To submit your kata solutions to CodeWars, you might have to strip some stuff in your solution, like `module.exports`. 
-
-To submit your kata solution tests, either just forget about it, or use multiple cursor magic to rewrite into the CodeWars specific Test framework.
