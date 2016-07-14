@@ -1,0 +1,22 @@
+{
+  "name": "codewars-parent",
+  "version": "1.0.0",
+  "description": "Codewars runner parent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sch3lp/codewars.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sch3lp/codewars/issues"
+  },
+  "homepage": "https://github.com/Sch3lp/codewars#readme",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
