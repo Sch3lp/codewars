@@ -16,8 +16,8 @@ Automaton.prototype.isValidDialect = function(commands) {
 Automaton.prototype.transition = function(commands) {
 	let currentState = new States.Q1();
 	commands.forEach((command) => {
-		let CurrentState = currentState.transition(command);
-		currentState = new CurrentState();
+		currentState = currentState.transition(command);
+		// currentState = new CurrentState();
 	});
 	return currentState;
 };
@@ -32,9 +32,9 @@ let States = (function() {
 	function Q2() {}
 	function Q3() {}
 
-	Q1.prototype.transition = (command) => command === '1' ? Q2 : Q1;
-	Q2.prototype.transition = (command) => command === '1' ? Q2 : Q3;
-	Q3.prototype.transition = (_) => Q2;
+	Q1.prototype.transition = (command) => command === '1' ? new Q2() : new Q1();
+	Q2.prototype.transition = (command) => command === '1' ? new Q2() : new Q3();
+	Q3.prototype.transition = (_) => new Q2();
 	Q1.prototype.isAcceptState = () => false;
 	Q2.prototype.isAcceptState = () => true;
 	Q3.prototype.isAcceptState = () => false;

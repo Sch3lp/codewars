@@ -6,24 +6,24 @@ var myAutomaton = new Automaton();
 describe('Q1', () => {
 	it('should transition correctly', () => {
 		let state = new States.Q1();
-		expect(state.transition('1')).to.equal(States.Q2);
-		expect(state.transition('0')).to.equal(States.Q1);
+		expect(state.transition('1')).to.be.an.instanceof(States.Q2);
+		expect(state.transition('0')).to.be.an.instanceof(States.Q1);
 	});
 });
 
 describe('Q2', () => {
 	it('should transition correctly', () => {
 		let state = new States.Q2();
-		expect(state.transition('1')).to.equal(States.Q2);
-		expect(state.transition('0')).to.equal(States.Q3);
+		expect(state.transition('1')).to.be.an.instanceof(States.Q2);
+		expect(state.transition('0')).to.be.an.instanceof(States.Q3);
 	});
 });
 
 describe('Q3', () => {
 	it('should transition correctly', () => {
 		let state = new States.Q3();
-		expect(state.transition('1')).to.equal(States.Q2);
-		expect(state.transition('0')).to.equal(States.Q2);
+		expect(state.transition('1')).to.be.an.instanceof(States.Q2);
+		expect(state.transition('0')).to.be.an.instanceof(States.Q2);
 	});
 });
 
