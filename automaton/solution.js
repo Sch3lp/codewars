@@ -6,6 +6,10 @@ module.exports = (() => {
 function Automaton() {
 }
 
+Automaton.prototype.readCommands = function(commands) {
+	return this.isValidDialect(commands) ? this.transition(commands).isAcceptState() : false;
+};
+
 Automaton.prototype.isValidDialect = function(commands) {
 	return commands.filter((command) => {
 		return ['0','1'].includes(command);
@@ -19,11 +23,6 @@ Automaton.prototype.transition = function(commands) {
 	});
 	return currentState;
 };
-
-Automaton.prototype.readCommands = function(commands) {
-	return this.isValidDialect(commands) ? this.transition(commands).isAcceptState() : false;
-};
-
 
 let States = (function() {
 	function Q1() {}
