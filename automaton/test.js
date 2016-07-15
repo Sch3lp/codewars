@@ -31,6 +31,7 @@ describe('isValidDialect', () => {
 	it('non strings are not valid', () => {
 		expect(myAutomaton.isValidDialect([1])).to.be.false;
 		expect(myAutomaton.isValidDialect(['1',1])).to.be.false;
+		expect(myAutomaton.isValidDialect(['1',true])).to.be.false;
 	});
 
 	it('unknown strings are not valid', () => {
