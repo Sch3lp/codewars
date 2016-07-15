@@ -4,7 +4,6 @@
 module.exports = (() => {
 
 function Automaton() {
-   this.states = [];
 }
 
 Automaton.prototype.isValidDialect = function(commands) {
@@ -17,7 +16,6 @@ Automaton.prototype.transition = function(commands) {
 	let currentState = new States.Q1();
 	commands.forEach((command) => {
 		currentState = currentState.transition(command);
-		// currentState = new CurrentState();
 	});
 	return currentState;
 };
